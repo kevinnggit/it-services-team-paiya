@@ -1,0 +1,25 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.fastapi
+    container_name: backend-llm
+    ports:
+      - "8033:8000"
+    env_file:
+      - .env
+    networks:
+      - app-net
+
+  frontend:
+    build:
+      context: ./chat
+    container_name: frontend-llm
+    ports:
+      - "3033:3000"
+    networks:
+      - app-net
+
+networks:
+  app-net:
+    driver: bridge

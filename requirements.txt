@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+langchain
+langchain-openai
+langchain-groq
+python-dotenv
+tqdm
+langchain-community
+prometheus-fastapi-instrumentator
+prometheus_client
+langchain-cli
+groq
