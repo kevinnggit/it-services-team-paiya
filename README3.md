@@ -100,7 +100,10 @@ Dieses Repository stellt **HBVGPT** bereit, einen Chat-Assistenten, der mit gro�
 ## Startanleitung
 1. **Voraussetzungen**
    - Installiere [Docker](https://www.docker.com) inkl. Docker Compose.
-   - Lege im Projektverzeichnis eine `.env` mit API-Schl체sseln an:
+   - Erstelle aus `.env.example` eine lokale `.env` und trage eigene API-Schl체ssel ein:
+     ```bash
+     cp .env.example .env
+     ```
      ```
      OPENAI_API_KEY=sk-...
      GROQ_API_KEY=...
@@ -195,4 +198,3 @@ HBVGPT demonstriert ein schlankes Zusammenspiel von Vue-Frontend und FastAPI-Bac
 5. Das Backend ruft je nach Provider Groq oder OpenAI auf, bereitet die Antwort auf und sendet sie zur체ck.
 6. Optional wird Feedback 체ber den zweiten Endpunkt geschickt.
 7. Prometheus kann das Backend 체berwachen, sofern es im selben Docker-Netzwerk l채uft.
-
