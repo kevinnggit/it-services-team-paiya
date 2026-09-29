@@ -186,7 +186,7 @@ Auf Grundlage des Designs erfolgt eine schrittweise Implementierung:
 
 ### 7.1 Vorbereitungsphase
 - Repository clonen, Grundstruktur pruefen
-- `.env` mit API-Schluesseln anlegen (z. B. fuer Groq, OpenAI)
+- `.env.example` nach `.env` kopieren und eigene API-Schluessel eintragen (z. B. fuer Groq, OpenAI)
 - Lokales Docker-Setup testen (`docker-compose up`)
 
 ### 7.2 Implementierung der Services

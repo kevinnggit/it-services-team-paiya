@@ -71,7 +71,13 @@ The services will be available at:
 
 ## 🔐 .env File
 
-Place a `.env` file in the project root for API configuration. Example:
+Copy `.env.example` to `.env` in the project root and fill in your own credentials:
+
+```bash
+cp .env.example .env
+```
+
+Example:
 
 ```env
 OPENAI_API_KEY=sk-...

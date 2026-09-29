@@ -3,6 +3,9 @@ __pycache__/
 *.pyo
 
 .env
+.env.*
+!.env.example
+.envrc
 .venv/
 venv/
 .idea/

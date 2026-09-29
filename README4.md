@@ -121,7 +121,7 @@ exposes port 3033 and depends on the `chat` directory.
 6. Running the Application
 --------------------------
 1. Ensure Docker and Docker Compose are installed.
-2. Place API keys in `.env` as shown in [README.md lines 84-92](./README.md).
+2. Copy `.env.example` to `.env` and add your own API keys (see [README.md](./README.md)).
 3. Run `docker-compose up --build`.
 4. Access the frontend at `http://localhost:3033` and the API at
    `http://localhost:8033/api/process_query`.
